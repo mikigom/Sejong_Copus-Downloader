@@ -25,13 +25,18 @@ Auto Downloader for Sejong Copus
 부칙. 이 계약의 효력은 갑과 을의 명의가 변경되더라도 존속한다.
 ```
 
-python과 [Selenium](https://pypi.python.org/pypi/selenium)이 설치되어 있어야 합니다. python의 2, 3 여부는 상관없습니다.
+
+python과 [Selenium](https://pypi.python.org/pypi/selenium)이 설치되어 있어야 합니다. python2든 python3든 상관없습니다.
 
 만약 Selenium이 설치되어 있지 않다면, ```pip install -U selenium``` 혹은 ```pip3 install -U selenium```로 설치해주십시오.
 
+
+실행은 다음과 같이 합니다.
 ```
 python download.py id pw w_time
 ```
 id, pw에는 [국립국어원 언어정보나눔터](https://ithub.korean.go.kr/user/main.do)에 가입한 아이디와 패스워드가 들어가야 합니다.
+
 w_time은 드라이버가 스크립트를 실행했을 때 정상적인 응답을 표시할 때까지 대기하는 시간입니다. 네트워크 속도나 컴퓨터 환경마다 다를 순 있지만, 0.3에서 0.5 정도를 권장합니다.
+
 예를 들면, ```python download.py mikibear a***** 0.3```와 같습니다.
